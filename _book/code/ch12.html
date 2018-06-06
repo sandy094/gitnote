@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>HTML/CSS · GitBook</title>
+        <title>Rebot + Selenium · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="ch10.html" />
     
-    
-    <link rel="prev" href="ch5.html" />
+    <link rel="prev" href="ch11.html" />
     
 
     </head>
@@ -239,7 +237,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.4" data-path="ch9.html">
+        <li class="chapter " data-level="1.3.4" data-path="ch9.html">
             
                 <a href="ch9.html">
             
@@ -278,7 +276,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.7" data-path="ch12.html">
+        <li class="chapter active" data-level="1.3.7" data-path="ch12.html">
             
                 <a href="ch12.html">
             
@@ -326,7 +324,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >HTML/CSS</a>
+        <a href=".." >Rebot + Selenium</a>
     </h1>
 </div>
 
@@ -341,118 +339,25 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="htmlcss">HTML/CSS</h2>
-<ol>
-<li>HTML tags are not case senteive(&#x6C92;&#x6709;&#x5E36;&#x5C0F;&#x5BEB;&#x4E4B;&#x5206;)   </li>
-<li><p><b> - Bold text&#x7C97;&#x9AD4; </b><br><strong> - Important text&#x7C97;&#x9AD4;-[text important]  </strong><br><i> - Italic text&#x659C;&#x9AD4; </i><br><em> - Emphasized text&#x659C;&#x9AD4;-[text important] </em><br><mark> - Marked text </mark><br><small> - Small text </small><br><del> - Deleted text </del><br><ins> - Inserted &#x5E95;&#x7DDA; </ins><br><sup> - Superscript text&#x4E0A;&#x6A19; </sup><br><sub> - Subscript text&#x4E0B;&#x6A19; </sub><br>
-&#x6587;&#x5B57;&#x9806;&#x5E8F;&#x5C0D;&#x63DB;-&gt;<bdo dir="rtl">what a wonderful day</bdo>      </p>
-</li>
-<li><p>HTML supports <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">140 standard color name</a>   </p>
-<p>HTML color can use RGB[rgb(255,99,71)],HEX[#ff6347],HSL[hsl(9,100%,64%)],RGBA [rgba(255,99,71,0.5)],HSLA[hsla(9,100%64%,0.5)]   </p>
-</li>
-</ol>
-<p><strong>CSS&#x5728;HTML&#x57F7;&#x884C;&#x6709;3&#x7A2E;&#x65B9;&#x5F0F;</strong>   </p>
-<ol>
-<li>inline   <pre><code>&lt;p style=&quot;color:blue&quot;&gt;this&lt;/p&gt;
-</code></pre></li>
-<li>internal-used to denfine a style for single HTMLpage&#x5D4C;&#x5165;&#x5957;&#x7528;      <pre><code>&lt;html&gt;
-&lt;head&gt;
-&lt;style&gt;
-body {background-color:powderblue;}
-h1   {color:bluel}
-p    {color:red;}
-&lt;/style&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre></li>
-<li><p>external CSS&#x5916;&#x90E8;&#x9023;&#x7D50;<br>&#x9023;&#x7D50;CSS&#x6A94;&#x9023;&#x7D50; </p>
-<pre><code>&lt;head&gt;
- &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
-&lt;/head&gt;
-</code></pre><p>&#x4F7F;&#x7528;ID&#x505A;CSS&#x9023;&#x7D50;  </p>
-<pre><code>&lt;html&gt;
- &lt;head&gt;
-   &lt;style&gt;
-    #p01 {
-      color: blue;
-     }
-   &lt;/style&gt;
- &lt;/head&gt;
- &lt;body&gt;
-
-    &lt;p id=&quot;p01&quot;&gt;I am different.&lt;/p&gt;
-
- &lt;/body&gt;
-&lt;/html&gt;
-</code></pre></li>
-</ol>
-<p><strong> The id of an element should be unique within a page, so the id selector is used to select one unique element!</strong><br>&#x9023;&#x7D50;&#x5916;&#x90E8;CSS&#x8CC7;&#x6E90;(&#x532F;&#x5165;&#x5957;&#x7528;)</p>
-<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://www.w3schools.com/html/styles.css&quot;&gt;
-</code></pre><p><strong>&#x6A19;&#x7C64;</strong>   </p>
-<ul>
-<li>table&#x6A19;&#x7C64;   <pre><code>&lt;table&gt; 
-&lt;tr&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;th&gt;2&lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
- &lt;td&gt;11&lt;/td&gt;
- &lt;td&gt;22&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-</code></pre></li>
-<li><p>list&#x6A19;&#x7C64;  </p>
-<ol>
-<li>An unordered List(&#x5716;&#x5F62;&#x6A19;&#x7C64;ul)<br><font color="cornflowerblue">
-list-style-type:desc //&#x6A19;&#x7C64;&#x7684;&#x6A23;&#x5F0F;(&#x9810;&#x8A2D;)<br>list-style-type:circle<br>list-style-type:square<br>list-style-type:none
-</font>   <pre><code>&lt;ul style=&quot;list-style-type:circle&quot;&gt;
-&lt;li&gt;A&lt;/li&gt;
-&lt;li&gt;B&lt;/li&gt;
-&lt;li&gt;C&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre></li>
-<li>An Ordered List(&#x6587;&#x5B57;&#x6A19;&#x7C64;ol)   <pre><code>&lt;ol type=&quot;1&quot;&gt;
-&lt;li&gt;AAA&lt;/li&gt;   
-&lt;li&gt;BBB&lt;/li&gt;
-&lt;li&gt;CCC&lt;/li&gt;
-&lt;/ol&gt;
-</code></pre></li>
-</ol>
-</li>
-<li><p>placeholder(input &#x9810;&#x8A2D;&#x6587;&#x5B57;)   </p>
-<ol>
-<li>example<br><input type="text" name="fname" placeholder="first name">   <pre><code>&lt;input type=&quot;text&quot; name=&quot;fname&quot; placeholder=&quot;first name&quot;&gt;
-</code></pre></li>
-</ol>
-</li>
-</ul>
-<p><strong>[CSS]class/id&#x5340;&#x5225;</strong><br>class &#x53EF;&#x4EE5;&#x5728;&#x9801;&#x9762;&#x88E1;&#x91CD;&#x8907;&#x4F7F;&#x7528;,&#x76E1;&#x91CF;&#x7528;class<br>id &#x53EA;&#x80FD;&#x51FA;&#x73FE;&#x4E00;&#x6B21;,&#x53EF;&#x4EE5;&#x7528;&#x4F86;&#x5340;&#x5206;&#x4E0D;&#x540C;&#x6A21;&#x7D44;<br>class&#x540D;&#x7A31;&#x8DDF;ID&#x540D;&#x7A31;&#x6709;&#x5927;&#x5C0F;&#x5BEB;&#x4E4B;&#x5206;<br>class:</p>
-<pre><code>&lt;style type=&quot;text/css&quot;&gt;
-.footer{background:LightCyan ;}
-&lt;/style&gt;
-&lt;div class=&quot;footer&quot;&gt;fotter&lt;/div&gt;
-</code></pre><p>id</p>
-<pre><code>&lt;style type=&quot;text/css&quot;&gt;
-#footer{background:LightCyan ;}
-&lt;/style&gt;
-&lt;div id=&quot;footer&quot;&gt;fotter&lt;/div&gt;
-</code></pre><p><strong>CSS&#x76D2;&#x5B50;&#x6A21;&#x5F0F;</strong>   </p>
-<ol>
-<li>&#x908A;&#x754C;Margin<br>&#x8A9E;&#x6CD5;:<br>margin[&#x4E0A;&#x908A;&#x754C;&#x503C;][&#x53F3;&#x908A;&#x754C;&#x503C;][&#x4E0B;&#x9762;&#x908A;&#x754C;&#x503C;][&#x5DE6;&#x908A;&#x754C;&#x503C;]   </li>
-<li>&#x908A;&#x6846;border   </li>
-<li>&#x7559;&#x767D;padding<br>&#x8A9E;&#x6CD5;:<br>padding[&#x4E0A;&#x7559;&#x767D;&#x503C;][&#x53F3;&#x908A;&#x7559;&#x767D;&#x503C;][&#x4E0B;&#x9762;&#x7559;&#x767D;&#x503C;][&#x5DE6;&#x7559;&#x767D;&#x503C;]</li>
-</ol>
-<p><em>CSS&#x6587;&#x5B57;</em></p>
-<ol>
-<li>text-align-&#x6587;&#x5B57;&#x5982;&#x4F55;&#x5C0D;&#x9F4A;  <pre><code>p{text-align:justify;} //&#x5DE6;&#x53F3;&#x5C0D;&#x9F4A;
-</code></pre></li>
-<li>word-spacing-&#x5B57;&#x8207;&#x5B57;&#x4E4B;&#x9593;&#x7684;&#x8DDD;&#x96E2;<pre><code>p{word-spacing:5px;}
-</code></pre></li>
-</ol>
-<p><strong>QA</strong>   </p>
-<p>Q. Which HTML element defines navigation links? A.<code>&lt;nav&gt;</code><br>Q. Choose the correct HTML element for the largest heading A.<code>&lt;h1&gt;</code><br>Q. The HTML <code>&lt;canvas&gt;</code> element is used to draw graphics on a web page. A.True<br>Q. Which input type defines a slider control?  A. range<br>Q. Which HTML element is used to display a scalar measurement within a range? A.<code>&lt;meter&gt;</code><br>Q. Which HTML element is used to specify a header for a document or section?A. <code>&lt;header&gt;</code></p>
-<hr>
-<p>&#x53C3;&#x8003;&#x8CC7;&#x6599;   </p>
+                                <h2 id="robot-framework--selenuim">Robot FrameWork + Selenuim</h2>
+<h6 id="&#x5DE5;&#x5177;">&#x5DE5;&#x5177;</h6>
+<p><strong>1. Python</strong><br><strong>2. robotframework</strong>:&#x4E0B;&#x6307;&#x4EE4; pip install robotframework<br><strong>3. </strong>:&#x4E0B;&#x6307;&#x4EE4;pip install robotframework-selenium2library</p>
+<p>Keyword-&gt;&#x5BEB;&#x52D5;&#x4F5C;keyword(&#x985E;&#x4F3C;&#x5957;&#x4EF6;)<br>&#x4E3B;&#x8981;&#x7DB2;&#x9801;(?)-&gt;&#x5BEB;TestCase   </p>
+<h6 id="&#x57F7;&#x884C;&#x547D;&#x4EE4;">&#x57F7;&#x884C;&#x547D;&#x4EE4;</h6>
+<p>&#x57F7;&#x884C;&#x6574;&#x500B;test&#x6A94;&#x6848;
+robot ${robot_file_url}
+example:
+robot web/test_dashboard_page.robot</p>
+<p>&#x57F7;&#x884C;&#x55AE;&#x4E00;test
+robot -t ${test_name} ${robot_file_url}
+example:
+robot -t &quot;Check login&quot; web/test_dashboard_page.robot</p>
+<h6 id="&#x8FF4;&#x5708;">&#x8FF4;&#x5708;</h6>
+<p>Example</p>
+<pre><code>    @{elements}    Set Variable    1   2
+    :FOR    ${&#x8B8A;&#x6578;}    IN    @{ELEMENTS}
+    \    StartXXX
+</code></pre><p><a href="http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#for-loops" target="_blank">&#x8FF4;&#x5708;&#x53C3;&#x8003;&#x6587;&#x4EF6;</a><br><strong>&#x5176;&#x4ED6;&#x7B46;&#x8A18;</strong><br><strong>&#x53C3;&#x8003;&#x8CC7;&#x6599;</strong><br><a href="http://robotframework.org/Selenium2Library/Selenium2Library.html" target="_blank">Selenium2Library</a></p>
 
                                 
                                 </section>
@@ -480,14 +385,10 @@ list-style-type:desc //&#x6A19;&#x7C64;&#x7684;&#x6A23;&#x5F0F;(&#x9810;&#x8A2D;
 
             
                 
-                <a href="ch5.html" class="navigation navigation-prev " aria-label="Previous page: SQL">
+                <a href="ch11.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: TypeScript/Angular">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="ch10.html" class="navigation navigation-next " aria-label="Next page: Bootstap">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -496,7 +397,7 @@ list-style-type:desc //&#x6A19;&#x7C64;&#x7684;&#x6A23;&#x5F0F;(&#x9810;&#x8A2D;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"HTML/CSS","level":"1.3.4","depth":2,"next":{"title":"Bootstap","level":"1.3.5","depth":2,"path":"code/ch10.md","ref":"code/ch10.md","articles":[]},"previous":{"title":"SQL","level":"1.3.3","depth":2,"path":"code/ch5.md","ref":"code/ch5.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"code/ch9.md","mtime":"2018-03-22T01:56:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-30T06:20:38.102Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Rebot + Selenium","level":"1.3.7","depth":2,"previous":{"title":"TypeScript/Angular","level":"1.3.6","depth":2,"path":"code/ch11.md","ref":"code/ch11.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"code/ch12.md","mtime":"2018-04-19T02:30:53.357Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-30T06:20:38.102Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

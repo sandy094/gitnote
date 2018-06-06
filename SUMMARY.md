@@ -1,9 +1,9 @@
 # Summary
 
-* [Introduction](README.md)  
-* [Tools](tools/README.md)  
-    * [GIT](tools/ch1.md)   
-    * [Visual_Studio](tools/ch2.md)  
+* [Introduction](README.md)
+* [Tools](tools/README.md)
+    * [GIT](tools/ch1.md)
+    * [Visual_Studio](tools/ch2.md)
     * [GITBOOK](tools/ch6.md)
     * [Selenuim](tools/ch7.md)
     * [GULP](tools/ch8.md)
@@ -14,3 +14,5 @@
     * [HTML/CSS](code/ch9.md)
     * [Bootstap](code/ch10.md)
     * [TypeScript/Angular](code/ch11.md)
+    * [Rebot + Selenium](code/ch12.md)
+

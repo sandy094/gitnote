@@ -11,4 +11,5 @@
 ---
 參考資料   
 [SQL語法](https://www.1keydata.com/tw/sql/sql-syntax.html)   
-[SQL-w3school](https://www.w3schools.com/sql/default.asp)
+[SQL-w3school](https://www.w3schools.com/sql/default.asp)   
+[索引前導鍵](https://sqlworker.blogspot.tw/2017/04/leading-column.html)

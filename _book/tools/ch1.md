@@ -7,7 +7,7 @@ git網路託管空間-Github.Bitbucket
 ##command line 執行git 步驟##    
 第一次git     
 1. 先建完專案   
-2. 加入git，建立自己的reposity(在要建git的資料夾上)  
+2. 加入git，並建立自己的reposity(在要建git的資料夾上)  
  ``` 
   $ git init   
 ```
