@@ -163,7 +163,7 @@ A. 解決分式 : Git資料夾進入Setting 將 Network 設定改為 C:\Program 
 
   ---
   #參考資料#   
-  [tortiseGIT](https://goo.gl/HweH5P)  
+  [tortiseGIT]()  
   [git基本語法](https://goo.gl/728vnx)   
   [git文件](https://git-scm.com/docs/git)
 

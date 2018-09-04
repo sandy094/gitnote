@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../doc/" />
+    
     
     <link rel="prev" href="ch11.html" />
     
@@ -171,7 +173,7 @@
                 <a href="../tools/ch8.html">
             
                     
-                    GULP
+                    Jenkins
             
                 </a>
             
@@ -294,6 +296,38 @@
             
         </li>
     
+        <li class="chapter " data-level="1.4" data-path="../doc/">
+            
+                <a href="../doc/">
+            
+                    
+                    自動化測試邏輯
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../doc/doc1.html">
+            
+                <a href="../doc/doc1.html">
+            
+                    
+                    營運看板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
 
@@ -341,9 +375,9 @@
                                 
                                 <h2 id="robot-framework--selenuim">Robot FrameWork + Selenuim</h2>
 <p>Robot FrameWork: python&#x7DE8;&#x5BEB;&#x7684;&#x81EA;&#x52D5;&#x5316;&#x6E2C;&#x8A66;&#x8EDF;&#x9AD4;&#x6846;&#x67B6;</p>
-<h6 id="&#x5DE5;&#x5177;">&#x5DE5;&#x5177;</h6>
-<p><strong>1. Python</strong><br><strong>2. robotframework</strong>:&#x4E0B;&#x6307;&#x4EE4; pip install robotframework<br><strong>3. </strong>:&#x4E0B;&#x6307;&#x4EE4;pip install robotframework-selenium2library</p>
-<p>Keyword-&gt;&#x5BEB;&#x52D5;&#x4F5C;keyword(&#x985E;&#x4F3C;&#x5957;&#x4EF6;)<br>&#x4E3B;&#x8981;&#x7DB2;&#x9801;(?)-&gt;&#x5BEB;TestCase   </p>
+<h6 id="&#x5DE5;&#x5177;&#x74B0;&#x5883;&#x5EFA;&#x7F6E;">&#x5DE5;&#x5177;(&#x74B0;&#x5883;&#x5EFA;&#x7F6E;)</h6>
+<p><strong>1. &#x5B89;&#x88DD;Python</strong><br><strong>2. robotframework</strong>:&#x4E0B;&#x6307;&#x4EE4; pip install robotframework<br><strong>3. selenium2</strong>:&#x4E0B;&#x6307;&#x4EE4;pip install robotframework-selenium2library</p>
+<p>Keyword:&#x900F;&#x904E;framework&#x6240;&#x4EE5;&#x63D0;&#x4F9B;&#x73FE;&#x6709;&#x500B;&#x95DC;&#x9375;&#x5B57;&#x53BB;&#x64B0;&#x5BEB;&#x6E2C;&#x8A66;<br>&#x4E3B;&#x8981;&#x7DB2;&#x9801;(?)-&gt;&#x5BEB;TestCase   </p>
 <h6 id="&#x57F7;&#x884C;&#x547D;&#x4EE4;">&#x57F7;&#x884C;&#x547D;&#x4EE4;</h6>
 <ol>
 <li><p>&#x57F7;&#x884C;&#x6574;&#x500B;test&#x6A94;&#x6848; :
@@ -357,14 +391,18 @@ robot -t ${test_name} ${robot_file_url}</p>
 robot -t &quot;Check login&quot; web/test_dashboard_page.robot
 </code></pre></li>
 </ol>
-<h5 id="&#x50B3;&#x503C;">&#x50B3;&#x503C;</h5>
+<h6 id="&#x8996;&#x7A97;&#x9AD8;&#x5EA6;&#x5927;&#x5C0F;">&#x8996;&#x7A97;&#x9AD8;&#x5EA6;&#x5927;&#x5C0F;</h6>
+<p>&#x8ABF;&#x6574;&#x8996;&#x7A97;&#x9AD8;&#x5EA6;<br>Execute JavaScript    window.scrollTo (<strong>Height</strong>, document.body.scrollHeight)<br>EX.</p>
+<pre><code>Execute JavaScript    window.scrollTo(200, document.body.scrollHeight)
+</code></pre><h5 id="&#x50B3;&#x503C;">&#x50B3;&#x503C;</h5>
 <p>&#x5224;&#x65B7;&#x662F;&#x5426;&#x6709;&#x6B63;&#x5E38;&#x986F;&#x793A;&#x503C;&#xFF0C;&#x53D6;&#x503C;&#x518D;&#x53BB;&#x505A;&#x9A57;&#x8B49;  </p>
 <ol>
 <li>Get Text <strong>Element</strong>  :&#x53D6;&#x5F97;&#x503C; </li>
 <li>Remove String  <strong>&#x8B8A;&#x6578;</strong>  <strong>&#x8981;&#x53BB;&#x9664;&#x7684;&#x503C;</strong>  :&#x5C07;&#x5B57;&#x4E32;&#x505A;&#x522A;&#x4FEE;</li>
 <li>Convert To Integer <strong>&#x8B8A;&#x6578;</strong> :&#x8F49;&#x63DB;&#x6210;&#x6578;&#x503C;  <h5 id="&#x5224;&#x65B7;&#x5F0F;">&#x5224;&#x65B7;&#x5F0F;</h5>
 </li>
-<li>Should Be Equal As Integers  <strong>&#x8B8A;&#x6578;1</strong>  <strong>&#x8B8A;&#x6578;2</strong>  :&#x5224;&#x65B7;&#x8B8A;&#x6578;1&#x53CA;&#x8B8A;&#x6578;2&#x662F;&#x5426;&#x70BA;&#x76F8;&#x7B49;<pre><code> ${A}=    Get Text    //div[@id=&quot;data-table&quot;]//tbody/tr[1]/td[3]//span[1]
+<li>Should Be Equal As Integers  <strong>&#x8B8A;&#x6578;1</strong>  <strong>&#x8B8A;&#x6578;2</strong><br>:&#x5224;&#x65B7;&#x8B8A;&#x6578;1&#x53CA;&#x8B8A;&#x6578;2&#x662F;&#x5426;&#x70BA;&#x76F8;&#x7B49;
+EX.<pre><code> ${A}=    Get Text    //div[@id=&quot;data-table&quot;]//tbody/tr[1]/td[3]//span[1]
  ${testA}=    Remove String    ${A}    ,
  Convert To Integer    ${testA}
  Should Be Equal As Integers  ${testA}  ${testA}
@@ -372,15 +410,16 @@ robot -t &quot;Check login&quot; web/test_dashboard_page.robot
 <li>Should Be True    <strong>&#x5224;&#x65B7;&#x5F0F;</strong></li>
 <li>Should Match  <strong>String</strong>  <strong>pattern</strong><br>&#x6BD4;&#x5C0D;&#x503C; pattern:&#x9700;&#x7B26;&#x5408;&#x7684;&#x689D;&#x4EF6;<br>*:&#x4EFB;&#x4F9D;&#x5B57;&#x6BCD;&#x7686;&#x7B26;&#x5408;(&#x4E0D;&#x7BA1;&#x591A;&#x5C11;&#x5B57;&#x5143;)<br>?:&#x4EFB;&#x4F9D;&#x5B57;&#x6BCD;&#x7686;&#x7B26;&#x5408;(&#x53EA;&#x9650;&#x4E00;&#x500B;&#x5B57;&#x5143;) </li>
 </ol>
-<h6 id="&#x8996;&#x7A97;&#x9AD8;&#x5EA6;&#x5927;&#x5C0F;">&#x8996;&#x7A97;&#x9AD8;&#x5EA6;&#x5927;&#x5C0F;</h6>
-<p>&#x8ABF;&#x6574;&#x8996;&#x7A97;&#x9AD8;&#x5EA6;<br>Execute JavaScript    window.scrollTo (<strong>Height</strong>, document.body.scrollHeight)<br>EX.</p>
-<pre><code>Execute JavaScript    window.scrollTo(200, document.body.scrollHeight)
-</code></pre><h6 id="&#x8FF4;&#x5708;">&#x8FF4;&#x5708;</h6>
+<h5 id="&#x51FA;&#x932F;&#x5F8C;&#x7E7C;&#x7E8C;&#x57F7;&#x884C;">&#x51FA;&#x932F;&#x5F8C;&#x7E7C;&#x7E8C;&#x57F7;&#x884C;</h5>
+<p>  Run Keyword And Cintinue On Failure  <strong>Keyword</strong> </p>
+<h6 id="&#x8FF4;&#x5708;">&#x8FF4;&#x5708;</h6>
 <p>Example</p>
 <pre><code>    @{elements}    Set Variable    1   2
     :FOR    ${&#x8B8A;&#x6578;}    IN    @{elements}
     \    StartXXX
-</code></pre><p><a href="http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#for-loops" target="_blank">&#x8FF4;&#x5708;&#x53C3;&#x8003;&#x6587;&#x4EF6;</a><br><strong>&#x5176;&#x4ED6;&#x7B46;&#x8A18;</strong><br><strong>&#x53C3;&#x8003;&#x8CC7;&#x6599;</strong><br><a href="http://robotframework.org/Selenium2Library/Selenium2Library.html" target="_blank">Selenium2Library</a><br><a href="http://robotframework.org/robotframework/" target="_blank">RobotFrameWork</a></p>
+</code></pre><p><a href="http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#for-loops" target="_blank">&#x8FF4;&#x5708;&#x53C3;&#x8003;&#x6587;&#x4EF6;</a> </p>
+<hr>
+<p><strong>&#x5176;&#x4ED6;&#x7B46;&#x8A18;</strong><br><strong>&#x53C3;&#x8003;&#x8CC7;&#x6599;</strong><br><a href="http://robotframework.org/Selenium2Library/Selenium2Library.html" target="_blank">Selenium2Library</a><br><a href="http://robotframework.org/robotframework/" target="_blank">RobotFrameWork</a><br><a href="https://hk.saowen.com/a/3a579b1de918bef204e556cec8d16ae82b6c5312417d37e750e6127d1c9bf6f6" target="_blank">RobotFrameWork-Keyword</a><br><a href="http://robotframework.org/robotframework/latest/libraries/BuiltIn.html" target="_blank">Builtin</a><br><a href="http://robotframework.org/robotframework/latest/libraries/OperatingSystem.html" target="_blank">OperatingSystem</a></p>
 
                                 
                                 </section>
@@ -408,10 +447,14 @@ robot -t &quot;Check login&quot; web/test_dashboard_page.robot
 
             
                 
-                <a href="ch11.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: TypeScript/Angular">
+                <a href="ch11.html" class="navigation navigation-prev " aria-label="Previous page: TypeScript/Angular">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="../doc/" class="navigation navigation-next " aria-label="Next page: 自動化測試邏輯">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -420,7 +463,7 @@ robot -t &quot;Check login&quot; web/test_dashboard_page.robot
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Rebot + Selenium","level":"1.3.7","depth":2,"previous":{"title":"TypeScript/Angular","level":"1.3.6","depth":2,"path":"code/ch11.md","ref":"code/ch11.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"code/ch12.md","mtime":"2018-07-10T06:06:10.941Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-12T01:43:38.332Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Rebot + Selenium","level":"1.3.7","depth":2,"next":{"title":"自動化測試邏輯","level":"1.4","depth":1,"path":"doc/README.md","ref":"doc/README.md","articles":[{"title":"營運看板","level":"1.4.1","depth":2,"path":"doc/doc1.md","ref":"doc/doc1.md","articles":[]}]},"previous":{"title":"TypeScript/Angular","level":"1.3.6","depth":2,"path":"code/ch11.md","ref":"code/ch11.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"code/ch12.md","mtime":"2018-08-15T09:02:04.425Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-30T06:43:14.217Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -6,7 +6,7 @@
     * [Visual_Studio](tools/ch2.md)
     * [GITBOOK](tools/ch6.md)
     * [Selenuim](tools/ch7.md)
-    * [GULP](tools/ch8.md)
+    * [Jenkins](tools/ch8.md)
 * [語言](code/README.md)
     * [excel函數](code/ch3.md)
     * [JavaScript](code/ch4.md)
@@ -15,4 +15,6 @@
     * [Bootstap](code/ch10.md)
     * [TypeScript/Angular](code/ch11.md)
     * [Rebot + Selenium](code/ch12.md)
+* [自動化測試邏輯](doc/README.md)
+    * [營運看板](doc/doc1.md)
 
