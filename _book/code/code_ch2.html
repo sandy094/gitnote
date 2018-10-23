@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>語言 · GitBook</title>
+        <title>JavaScript · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="code_ch1.html" />
+    <link rel="next" href="code_ch3.html" />
     
     
-    <link rel="prev" href="../tools/tool_ch6.html" />
+    <link rel="prev" href="code_ch1.html" />
     
 
     </head>
@@ -199,7 +199,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="./">
             
                 <a href="./">
             
@@ -226,7 +226,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="code_ch2.html">
+        <li class="chapter active" data-level="1.3.2" data-path="code_ch2.html">
             
                 <a href="code_ch2.html">
             
@@ -416,7 +416,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >語言</a>
+        <a href=".." >JavaScript</a>
     </h1>
 </div>
 
@@ -431,16 +431,114 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><strong>&#x7A0B;&#x5F0F;&#x8A9E;&#x8A00;</strong>  </p>
+                                <h2 id="javascript">JavaScript</h2>
+<p>  <strong>QA</strong></p>
 <ol>
-<li>EXCEL&#x51FD;&#x6578; </li>
-<li>JavaScript  </li>
-<li>SQL</li>
-<li>HTML/CSS  </li>
-<li>Bootstrap  </li>
-<li>TypeScript/Angular  </li>
-<li>Robot Framework/Selenium</li>
+<li>detect the client&apos;s brower&apos;s name   </li>
+<li>Javascript is case-sensitive(&#x6709;&#x5340;&#x5206;&#x5927;&#x5C0F;&#x5BEB;)</li>
 </ol>
+<p>Array Sort   </p>
+<ol>
+<li><p>the sort() method sorts an array alphabetically   </p>
+<pre><code>var A = [&quot;Banana&quot;,&quot;Orage&quot;,&quot;Apple&quot;,&quot;Mango&quot;];   
+fruits.sort();
+
+Apple,Banana,Mango,Orange
+</code></pre></li>
+<li>the compare function  <pre><code>function(a,b){return a-b}  //&#x7531;&#x5C0F;&#x6392;&#x5230;&#x5927; 
+fubction(a,b){return b-a}  //&#x7531;&#x5927;&#x6392;&#x5230;&#x5C0F;
+</code></pre></li>
+<li><p>Booleans  </p>
+<pre><code>var x = false;  //string
+var y = new boolean(false);  //object
+
+//(x===y) is false because x and y have different types
+</code></pre><ul>
+<li>&quot;===&quot;&#x4E0D;&#x6703;&#x628A;&#x5169;&#x908A;&#x7684;type&#x5F37;&#x5236;&#x8F49;&#x578B;,&quot;==&quot;&#x6703;&#x5F37;&#x5236;&#x8F49;&#x578B;&quot;   </li>
+<li>&quot;==&quot;&#x7C21;&#x6613;&#x8F49;&#x578B;      </li>
+<li>object cannont be compared   </li>
+</ul>
+</li>
+<li>Switch   </li>
+</ol>
+<p><strong>JSON</strong><br>JavaScriptObjectNotation<br>JSON is a format for storing and transporting data.<br>JAON is often used when data is sent from a server to a web page.</p>
+<p><strong>Objects</strong></p>
+<ol>
+<li>definitions<br>objects&#x4E5F;&#x662F;&#x4E00;&#x500B;&#x8B8A;&#x6578;(variables),&#x4F46;&#x662F;objects&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x5F88;&#x591A;&#x500B;&#x503C;   <pre><code>var person ={first:&quot;John&quot;,age:50,color:&quot;blue&quot;};
+</code></pre></li>
+<li><p>&#x5BA3;&#x544A;&#x65B9;&#x5F0F;(Object Literal)<br>&#x6709;&#x5169;&#x7A2E;&#xFF0C;&#x901A;&#x5E38;&#x90FD;&#x7528;&#x7B2C;&#x4E00;&#x7A2E;  </p>
+<pre><code>var person = {
+first=&quot;name&quot;,
+last=&quot;name&quot;,
+age=50,
+color=&quot;na&quot;
+};   
+
+var person = new Object();
+person.frist=&quot;name&quot;;
+person.last=&quot;name&quot;;
+person.age=50;
+person.color=&quot;na&quot;;
+
+var person = new Object();
+person[&quot;first&quot;]=&quot;name&quot;;
+person[&quot;last&quot;]=&quot;name&quot;;
+person[&quot;age&quot;]=50;
+person[color]=&quot;na&quot;;
+</code></pre></li>
+</ol>
+<p>prototype(&#x539F;&#x578B;)[&#x985E;&#x4F3C;&#x7E7C;&#x627F;&#x7684;&#x6982;&#x5FF5;]   </p>
+<ol>
+<li>object&#x548C;object&#x4E4B;&#x9593;&#x53EF;&#x4EE5;&#x4E92;&#x76F8;&#x6210;&#x70BA;&#x5404;&#x81EA;&#x7684;prototype,&#x88AB;&#x7E7C;&#x627F;&#x7684;object&#x5C07;&#x6703;&#x7E7C;&#x627F;&#x7236;object&#x7684;prototype&#x6240;&#x6709;&#x5C6C;&#x6027;     </li>
+<li>JavaScript &#x5728;&#x5C0B;&#x627E;&#x7279;&#x6027;&#x540D;&#x7A31;&#x6642;&#xFF0C;&#x6703;&#x5728;&#x8A72;&#x7269;&#x4EF6;&#x627E;&#x7279;&#x6027;,&#x5982;&#x679C;&#x627E;&#x4E0D;&#x5230;&#x518D;&#x5F80;prototype(&#x539F;&#x578B;)&#x88E1;&#x627E;&#x7279;&#x6027;&#x4E26;&#x4F7F;&#x7528;&#x3002;   </li>
+<li><strong>&#x53EA;&#x6709;&#x5728;&#x67E5;&#x627E;&#x7279;&#x6027;&#xFF0C;&#x800C;&#x7269;&#x4EF6;&#x4E0A;&#x4E0D;&#x5177;&#x8A72;&#x7279;&#x6027;&#x6642;&#x624D;&#x6703;&#x4F7F;&#x7528;&#x539F;&#x578B;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5C0D;&#x7269;&#x4EF6;&#x8A2D;&#x5B9A;&#x67D0;&#x500B;&#x7279;&#x6027;&#xFF0C;&#x662F;&#x76F4;&#x63A5;&#x5728;&#x7269;&#x4EF6;&#x4E0A;&#x8A2D;&#x5B9A;&#x4E86;&#x7279;&#x6027;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5C0D;&#x539F;&#x578B;&#x8A2D;&#x5B9A;&#x4E86;&#x7279;&#x6027;&#x3002;</strong><br>ex   </li>
+</ol>
+<pre><code>function person(name,age){
+  this.name=name;   
+  this.age=age;
+}
+
+person.prototype.toString=function(){
+  return&apos;[&apos;+ this.name+&apos;,&apos;+this.age+&apos;]&apos;
+};
+ver p1=new person(&apos;AAA&apos;,33);
+
+console.log(p1.tostring()); //[AAA,33]
+</code></pre><ul>
+<li>&#x5BA3;&#x544A;&#x8B8A;&#x6578;   </li>
+</ul>
+<pre><code> var d;
+  console.log(d);   //d=undefind
+
+  console.log(a);  //a=Regerenceerror
+</code></pre><ul>
+<li>&#x5982;&#x679C;&#x7D66;&#x4E88;&#x7684;&#x503C;&#x662F;[0,undenfind,null]&#x5728;boolean&#x662F;&#x8996;&#x70BA;FALSE   </li>
+</ul>
+<pre><code> var a;
+   a+2;  //NaN
+
+var n = null;   
+  console.log(n*32);  //n=0
+</code></pre><ul>
+<li><p>&#x5728;&#x904B;&#x7B97;&#x4E2D;undefind&#x6703;&#x8F49;&#x6210;&#x975E;&#x6578;&#x503C;(NaN)&#xFF0C;null&#x8F49;&#x6210;0</p>
+</li>
+<li><p>&#x7ACB;&#x5373;&#x51FD;&#x5F0F;
+&#x67B6;&#x69CB;<br>(function(){</p>
+<p>})();</p>
+</li>
+</ul>
+<html>
+<script>
+int num=10;
+for(int i = 0;i<100; i++){
+  int num=20;
+}
+printf("%d",num);
+</script>
+  </html>
+
+<hr>
+<p>&#x53C3;&#x8003;&#x8CC7;&#x6599;<br><a href="https://goo.gl/Un1FfB" target="_blank">JavaScript</a><br><a href="https://goo.gl/A5otbG" target="_blank">JavaScript&#x9663;&#x5217;&#x65B9;&#x6CD5;</a></p>
 
                                 
                                 </section>
@@ -468,12 +566,12 @@
 
             
                 
-                <a href="../tools/tool_ch6.html" class="navigation navigation-prev " aria-label="Previous page: Axure">
+                <a href="code_ch1.html" class="navigation navigation-prev " aria-label="Previous page: excel函數">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="code_ch1.html" class="navigation navigation-next " aria-label="Next page: excel函數">
+                <a href="code_ch3.html" class="navigation navigation-next " aria-label="Next page: SQL">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -484,7 +582,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"語言","level":"1.3","depth":1,"next":{"title":"excel函數","level":"1.3.1","depth":2,"path":"code/code_ch1.md","ref":"code/code_ch1.md","articles":[]},"previous":{"title":"Axure","level":"1.2.6","depth":2,"path":"tools/tool_ch6.md","ref":"tools/tool_ch6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"code/README.md","mtime":"2018-09-27T01:30:18.405Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-19T07:51:19.340Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JavaScript","level":"1.3.2","depth":2,"next":{"title":"SQL","level":"1.3.3","depth":2,"path":"code/code_ch3.md","ref":"code/code_ch3.md","articles":[]},"previous":{"title":"excel函數","level":"1.3.1","depth":2,"path":"code/code_ch1.md","ref":"code/code_ch1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"code/code_ch2.md","mtime":"2018-10-23T07:59:38.315Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-19T07:51:19.340Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

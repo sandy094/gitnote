@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>語言 · GitBook</title>
+        <title>Bootstrap · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="code_ch1.html" />
+    <link rel="next" href="code_ch6.html" />
     
     
-    <link rel="prev" href="../tools/tool_ch6.html" />
+    <link rel="prev" href="code_ch4.html" />
     
 
     </head>
@@ -199,7 +199,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="./">
             
                 <a href="./">
             
@@ -265,7 +265,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="code_ch5.html">
+        <li class="chapter active" data-level="1.3.5" data-path="code_ch5.html">
             
                 <a href="code_ch5.html">
             
@@ -416,7 +416,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >語言</a>
+        <a href=".." >Bootstrap</a>
     </h1>
 </div>
 
@@ -431,16 +431,38 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><strong>&#x7A0B;&#x5F0F;&#x8A9E;&#x8A00;</strong>  </p>
-<ol>
-<li>EXCEL&#x51FD;&#x6578; </li>
-<li>JavaScript  </li>
-<li>SQL</li>
-<li>HTML/CSS  </li>
-<li>Bootstrap  </li>
-<li>TypeScript/Angular  </li>
-<li>Robot Framework/Selenium</li>
-</ol>
+                                <h2 id="bootstrap">bootstrap</h2>
+<p>&#x9700;&#x8981;&#x5148;import-&gt;bootstrap-&gt;jquery<br>&#x9023;&#x7D50;&#x672C;&#x6A5F;&#x7AEF;&#x8A72;&#x5C08;&#x6848;&#x4E5F;&#x8981;npm install&#x9032;package</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;/&gt;
+    &lt;title&gt;boostrap&lt;/title&gt;
+   &lt;!-- &#x639B;&#x8F09;CSS&#x6A23;&#x5F0F; &#x9023;&#x7D50;&#x672C;&#x6A5F;&#x7AEF;--&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;node_modules/bootstrap/dist/css/bootstrap.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;node_modules/bootstrap/dist/css/bootstrap-grid.min.css&quot;&gt; 
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;node_modules/bootstrap/dist/css/bootstrap-reboot.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;./style.css&quot;&gt;
+    &lt;!-- &#x639B;&#x8F09;JS&#x6A23;&#x5F0F; --&gt;
+    &lt;script src=&quot;node_modules/jquery/dist/jquery.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;node_modules/jquery/dist/jquery.min.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;node_modules/popper.js/dist/umd/popper.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;node_modules/bootstrap/dist/js/bootstrap.min.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;  
+    &lt;script src=&quot;./script.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+        &lt;div class=&quot;container-fluid&quot;&gt;   
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-6&quot;&gt;&lt;span&gt;1&lt;/span&gt;&lt;/div&gt;
+                &lt;div class=&quot;col-4&quot;&gt;&lt;span&gt;2&lt;/span&gt;&lt;/div&gt;
+                &lt;div class=&quot;col-2&quot;&gt;&lt;span&gt;3&lt;/span&gt;&lt;/div&gt;
+            &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p><strong>&#x5176;&#x4ED6;&#x7B46;&#x8A18;</strong><br>&#x5207;&#x7248;-&gt;&#x5C31;&#x662F;&#x628A;&#x539F;&#x672C;&#x8A2D;&#x8A08;&#x597D;&#x7684;&#x5716;&#x6A94;&#x5207;&#x6210;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7684;HTML/CSS&#xFF0C;&#x5982;&#x4F55;&#x5207;&#x597D;&#x7684;&#x677F;&#x9760;&quot;&#x7D93;&#x9A57;&quot;<br>BOWER-&gt;&#x7BA1;&#x7406;&#x76F8;&#x4F9D;&#x5957;&#x4EF6;&#x5DE5;&#x5177;&#xFF0C;bower&#x66F4;&#x65B0;&#x6AA2;&#x67E5;&#x500B;&#x5957;&#x4EF6;&#x6700;&#x65B0;&#x7248;&#x672C;&#x53CA;&#x76F8;&#x4F9D;<br><a href="https://ithelp.ithome.com.tw/articles/10159261" target="_blank">&#x53C3;&#x8003;&#x6587;&#x4EF6;</a></p>
 
                                 
                                 </section>
@@ -468,12 +490,12 @@
 
             
                 
-                <a href="../tools/tool_ch6.html" class="navigation navigation-prev " aria-label="Previous page: Axure">
+                <a href="code_ch4.html" class="navigation navigation-prev " aria-label="Previous page: HTML/CSS">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="code_ch1.html" class="navigation navigation-next " aria-label="Next page: excel函數">
+                <a href="code_ch6.html" class="navigation navigation-next " aria-label="Next page: Angular">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -484,7 +506,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"語言","level":"1.3","depth":1,"next":{"title":"excel函數","level":"1.3.1","depth":2,"path":"code/code_ch1.md","ref":"code/code_ch1.md","articles":[]},"previous":{"title":"Axure","level":"1.2.6","depth":2,"path":"tools/tool_ch6.md","ref":"tools/tool_ch6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"code/README.md","mtime":"2018-09-27T01:30:18.405Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-19T07:51:19.340Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Bootstrap","level":"1.3.5","depth":2,"next":{"title":"Angular","level":"1.3.6","depth":2,"path":"code/code_ch6.md","ref":"code/code_ch6.md","articles":[]},"previous":{"title":"HTML/CSS","level":"1.3.4","depth":2,"path":"code/code_ch4.md","ref":"code/code_ch4.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"code/code_ch5.md","mtime":"2018-10-23T08:00:17.906Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-19T07:51:19.340Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
