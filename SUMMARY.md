@@ -7,6 +7,7 @@
     * [GITBOOK](tools/tool_ch3.md)
     * [Selenuim](tools/tool_ch4.md)
     * [Jenkins](tools/tool_ch5.md)
+    * [Jenkins+Githib](tools/tool_ch5-1.md)
     * [Axure](tools/tool_ch6.md)
 * [語言](code/README.md)
     * [excel函數](code/code_ch1.md)
