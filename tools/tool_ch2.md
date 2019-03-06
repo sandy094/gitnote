@@ -7,6 +7,7 @@
 
   * 打開console介面 
     快捷鍵 ctrl+ ~
+  * 從資料夾開VSTS指令:code .
 
 ---
 參考資料   

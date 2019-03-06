@@ -28,7 +28,7 @@ git網路託管空間-Github.Bitbucket
 
 ##command line##     
 **clone**   
-將現有的專案clone下來   
+將現有的專案clone(複製)下來   
 1. 從github網站->按下專案內部的綠色按鈕->把網址複製下來   
 2. 回到命令行  
 
