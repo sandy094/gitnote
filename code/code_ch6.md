@@ -94,8 +94,11 @@ valuePrepareFunction:在載入表格內容之前，你可以定義該欄位要�
 ######Toaster Module   
 [參考資料](https://github.com/PointInside/ng2-toastr)   
 
+---
 **其他筆記**   
 [Angular](https://gist.github.com/doggy8088/91e5b6773715c15e5df50792678cac2a)  
 [Angular-開發環境](https://gist.github.com/wellwind/5190fd34bf67c3fb9736a70c0af57ebd)  
 [屬性指令Attribute Directive](https://dotblogs.com.tw/h20/2018/05/08/182057)  
 [Angular 資源](https://angular.io/resources/)
+
+[Angular參考資料](https://ithelp.ithome.com.tw/articles/10189032)

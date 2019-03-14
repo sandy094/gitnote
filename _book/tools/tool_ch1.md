@@ -6,7 +6,7 @@ git網路託管空間-Github.Bitbucket
 
 ##command line 執行git 步驟##    
 第一次git     
-1. 先建完專案   
+1. 先在github建完專案(會有後續的指令)   
 2. 加入git，並建立自己的reposity(在要建git的資料夾上)  
  ``` 
   $ git init   
@@ -22,7 +22,17 @@ git網路託管空間-Github.Bitbucket
 5. 寫commit的訊息  
   ```
   $ git commit -m '訊息內容'   
+  ```   
+6. 連結到遠端的動作  
+   ```origin```指的是後面那串GitHub伺服器位置   
   ```
+  $ git remote add origin git url   
+  ```   
+7. PUSH   
+   ```
+   $ git push origin master  
+   ```
+
 
 ---     
 
@@ -162,10 +172,11 @@ Q.git did not exit cleanly (exit code 128)
 A. 解決分式 : Git資料夾進入Setting 將 Network 設定改為 C:\Program Files\TortoiseGit\bin\TortoiseGitPlink.exe   
 
   ---
-  #參考資料#   
+  ##參考資料##   
   [tortiseGIT]()  
   [git基本語法](https://goo.gl/728vnx)   
-  [git文件](https://git-scm.com/docs/git)
+  [git文件](https://git-scm.com/docs/git)  
+  [github相關指令](https://gitbook.tw/chapters/github/push-to-github.html)
 
 
 **類似工具**   

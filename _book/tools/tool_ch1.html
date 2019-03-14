@@ -453,7 +453,7 @@
 <h2 id="command-line-&#x57F7;&#x884C;git-&#x6B65;&#x9A5F;">command line &#x57F7;&#x884C;git &#x6B65;&#x9A5F;</h2>
 <p>&#x7B2C;&#x4E00;&#x6B21;git     </p>
 <ol>
-<li>&#x5148;&#x5EFA;&#x5B8C;&#x5C08;&#x6848;   </li>
+<li>&#x5148;&#x5728;github&#x5EFA;&#x5B8C;&#x5C08;&#x6848;(&#x6703;&#x6709;&#x5F8C;&#x7E8C;&#x7684;&#x6307;&#x4EE4;)   </li>
 <li>&#x52A0;&#x5165;git&#xFF0C;&#x4E26;&#x5EFA;&#x7ACB;&#x81EA;&#x5DF1;&#x7684;reposity(&#x5728;&#x8981;&#x5EFA;git&#x7684;&#x8CC7;&#x6599;&#x593E;&#x4E0A;)  <pre><code>$ git init
 </code></pre></li>
 <li>&#x5C07;&#x6A94;&#x6848;add&#x5230;staging area   <pre><code>$ git add &#x6A94;&#x540D;.txt
@@ -461,6 +461,12 @@
 <li>commit&#x5230;repository   <pre><code>$ git commit
 </code></pre></li>
 <li>&#x5BEB;commit&#x7684;&#x8A0A;&#x606F;  <pre><code>$ git commit -m &apos;&#x8A0A;&#x606F;&#x5167;&#x5BB9;&apos;
+</code></pre></li>
+<li>&#x9023;&#x7D50;&#x5230;&#x9060;&#x7AEF;&#x7684;&#x52D5;&#x4F5C;  <pre><code class="lang-origin```&#x6307;&#x7684;&#x662F;&#x5F8C;&#x9762;&#x90A3;&#x4E32;GitHub&#x4F3A;&#x670D;&#x5668;&#x4F4D;&#x7F6E;">```
+$ git remote add origin git url
+</code></pre>
+</li>
+<li>PUSH   <pre><code>$ git push origin master
 </code></pre></li>
 </ol>
 <hr>
@@ -579,8 +585,8 @@ $git stash apply stash@{?}  //&#x6307;&#x5B9A;&#x5957;&#x7528;&#x54EA;&#x4E00;&#
 <p>Q.git did not exit cleanly (exit code 128)</p>
 <p>A. &#x89E3;&#x6C7A;&#x5206;&#x5F0F; : Git&#x8CC7;&#x6599;&#x593E;&#x9032;&#x5165;Setting &#x5C07; Network &#x8A2D;&#x5B9A;&#x6539;&#x70BA; C:\Program Files\TortoiseGit\bin\TortoiseGitPlink.exe   </p>
 <hr>
-<h1 id="&#x53C3;&#x8003;&#x8CC7;&#x6599;">&#x53C3;&#x8003;&#x8CC7;&#x6599;</h1>
-<p>  <a href="">tortiseGIT</a><br>  <a href="https://goo.gl/728vnx" target="_blank">git&#x57FA;&#x672C;&#x8A9E;&#x6CD5;</a><br>  <a href="https://git-scm.com/docs/git" target="_blank">git&#x6587;&#x4EF6;</a></p>
+<h2 id="&#x53C3;&#x8003;&#x8CC7;&#x6599;">&#x53C3;&#x8003;&#x8CC7;&#x6599;</h2>
+<p>  <a href="">tortiseGIT</a><br>  <a href="https://goo.gl/728vnx" target="_blank">git&#x57FA;&#x672C;&#x8A9E;&#x6CD5;</a><br>  <a href="https://git-scm.com/docs/git" target="_blank">git&#x6587;&#x4EF6;</a><br>  <a href="https://gitbook.tw/chapters/github/push-to-github.html" target="_blank">github&#x76F8;&#x95DC;&#x6307;&#x4EE4;</a></p>
 <p><strong>&#x985E;&#x4F3C;&#x5DE5;&#x5177;</strong><br>  <a href="https://zhuanghongkuan1.gitbooks.io/demo0115/content/chapter4/433.html" target="_blank">SOURCE TREE</a></p>
 
                                 
@@ -625,7 +631,7 @@ $git stash apply stash@{?}  //&#x6307;&#x5B9A;&#x5957;&#x7528;&#x54EA;&#x4E00;&#
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"GIT","level":"1.2.1","depth":2,"next":{"title":"Visual_Studio","level":"1.2.2","depth":2,"path":"tools/tool_ch2.md","ref":"tools/tool_ch2.md","articles":[]},"previous":{"title":"Tools","level":"1.2","depth":1,"path":"tools/README.md","ref":"tools/README.md","articles":[{"title":"GIT","level":"1.2.1","depth":2,"path":"tools/tool_ch1.md","ref":"tools/tool_ch1.md","articles":[]},{"title":"Visual_Studio","level":"1.2.2","depth":2,"path":"tools/tool_ch2.md","ref":"tools/tool_ch2.md","articles":[]},{"title":"GITBOOK","level":"1.2.3","depth":2,"path":"tools/tool_ch3.md","ref":"tools/tool_ch3.md","articles":[]},{"title":"Selenuim","level":"1.2.4","depth":2,"path":"tools/tool_ch4.md","ref":"tools/tool_ch4.md","articles":[]},{"title":"Jenkins","level":"1.2.5","depth":2,"path":"tools/tool_ch5.md","ref":"tools/tool_ch5.md","articles":[]},{"title":"Jenkins+Githib","level":"1.2.6","depth":2,"path":"tools/tool_ch5-1.md","ref":"tools/tool_ch5-1.md","articles":[]},{"title":"Axure","level":"1.2.7","depth":2,"path":"tools/tool_ch6.md","ref":"tools/tool_ch6.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"tools/tool_ch1.md","mtime":"2019-03-06T03:07:29.513Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-14T02:55:24.494Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GIT","level":"1.2.1","depth":2,"next":{"title":"Visual_Studio","level":"1.2.2","depth":2,"path":"tools/tool_ch2.md","ref":"tools/tool_ch2.md","articles":[]},"previous":{"title":"Tools","level":"1.2","depth":1,"path":"tools/README.md","ref":"tools/README.md","articles":[{"title":"GIT","level":"1.2.1","depth":2,"path":"tools/tool_ch1.md","ref":"tools/tool_ch1.md","articles":[]},{"title":"Visual_Studio","level":"1.2.2","depth":2,"path":"tools/tool_ch2.md","ref":"tools/tool_ch2.md","articles":[]},{"title":"GITBOOK","level":"1.2.3","depth":2,"path":"tools/tool_ch3.md","ref":"tools/tool_ch3.md","articles":[]},{"title":"Selenuim","level":"1.2.4","depth":2,"path":"tools/tool_ch4.md","ref":"tools/tool_ch4.md","articles":[]},{"title":"Jenkins","level":"1.2.5","depth":2,"path":"tools/tool_ch5.md","ref":"tools/tool_ch5.md","articles":[]},{"title":"Jenkins+Githib","level":"1.2.6","depth":2,"path":"tools/tool_ch5-1.md","ref":"tools/tool_ch5-1.md","articles":[]},{"title":"Axure","level":"1.2.7","depth":2,"path":"tools/tool_ch6.md","ref":"tools/tool_ch6.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"tools/tool_ch1.md","mtime":"2019-03-06T05:51:15.822Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-14T02:55:24.494Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
