@@ -2,9 +2,9 @@
 
 Robot FrameWork: python編寫的自動化測試軟體框架
 ######工具(環境建置)     
-**1. 安裝Python**   
-**2. robotframework**:下指令 pip install robotframework   
-**3. selenium2**:下指令pip install robotframework-selenium2library
+**1. 安裝Python**:確認python版本```python --version```      
+**2. robotframework**:下指令 ```pip install robotframework```   
+**3. selenium2**:下指令 ```pip install robotframework-selenium2library```
 
 Keyword:透過framework所以提供現有個關鍵字去撰寫測試   
 主要網頁(?)->寫TestCase   
@@ -63,12 +63,12 @@ Example
     \    StartXXX
 ```   
 [迴圈參考文件](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#for-loops) 
+[迴圈參考文件2](https://tonylin.idv.tw/dokuwiki/doku.php/rf:rf:for_loop)
 
 ---
 **其他筆記**   
 **參考資料**   
 [Selenium2Library](http://robotframework.org/Selenium2Library/Selenium2Library.html)   
 [RobotFrameWork](http://robotframework.org/robotframework/)   
-[RobotFrameWork-Keyword](https://hk.saowen.com/a/3a579b1de918bef204e556cec8d16ae82b6c5312417d37e750e6127d1c9bf6f6)  
 [Builtin](http://robotframework.org/robotframework/latest/libraries/BuiltIn.html)  
 [OperatingSystem](http://robotframework.org/robotframework/latest/libraries/OperatingSystem.html)

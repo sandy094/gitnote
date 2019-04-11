@@ -24,4 +24,6 @@ http://localhost:8080/job/ppap_automated_test/60/robot/report/report.html
 push完自動跑測試，全部跑完的結果  
 http://localhost:8080/job/ppap_automated_test2/27/robot/report/log.html  
 
-目前遇到問題  測試視窗問題
+目前遇到問題  站台比較-測試視窗問題
+
+
