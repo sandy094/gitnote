@@ -1,43 +1,51 @@
 ##Robot FrameWork + Selenuim    
 
-Robot FrameWork: python編寫的自動化測試軟體框架
+Robot FrameWork: python編寫的自動化測試軟體框架   
 ######工具(環境建置)     
-**1. 安裝Python**:確認python版本```python --version```      
+**1. 安裝Python**:確認python版本```python --version```    
+當安裝失敗:設定環境變數:將安裝python的資料夾下script檔案位置記下，"加入"PATH的環境變數  
 **2. robotframework**:下指令 ```pip install robotframework```   
-**3. selenium2**:下指令 ```pip install robotframework-selenium2library```
+**3. selenium2**:下指令 ```pip install robotframework-selenium2library```  
 
 Keyword:透過framework所以提供現有個關鍵字去撰寫測試   
 主要網頁(?)->寫TestCase   
 
-######執行命令   
-1. 執行整個test檔案 :
-robot ${robot_file_url}
+######一、執行命令   
+1. 執行整個test檔案 :   
 ```
-example:
 robot web/test_dashboard_page.robot
 ```
 
-2. 執行單一test :
-robot -t ${test_name} ${robot_file_url}
+2. 執行單一test :   
 ```
-example:
 robot -t "Check login" web/test_dashboard_page.robot
 ```
 
-######視窗高度大小  
-調整視窗高度  
-Execute JavaScript    window.scrollTo (**Height**, document.body.scrollHeight)  
-EX.
+######二、視窗高度大小  
+利用JavaScript的語法去調整高度   
+* 調整視窗高度  
+window.scrollTo (**Height**, document.body.scrollHeight)  
 ```
 Execute JavaScript    window.scrollTo(200, document.body.scrollHeight)
+```  
+* 到達指定的頁面高度   
+window.document.documentElement.scrollTop = **Height**;  
+``` 
+Execute JavaScript  window.document.documentElement.scrollTop = 0;   
 ```
 
-#####傳值  
+######三、出錯後繼續執行  
+  Run Keyword And Continue On Failure  **Keyword**   
+
+###**常用的keyword**   
+#### 1、取值  
 判斷是否有正常顯示值，取值再去做驗證  
-1. Get Text **Element**  :取得值 
-2. Remove String  **變數**  **要去除的值**  :將字串做刪修
-3. Convert To Integer **變數** :轉換成數值  
-#####判斷式   
+1. Get Element Count **Element**  :抓有幾個element  
+2. Get Text **Element**  :取得值 
+3. Remove String  **變數**  **要去除的值**  :將字串做刪修
+4. Convert To Integer **變數** :轉換成數值   
+
+#### 2、判斷式   
 1. Should Be Equal As Integers  **變數1**  **變數2**   
    :判斷變數1及變數2是否為相等
 EX.
@@ -48,21 +56,33 @@ EX.
     Should Be Equal As Integers  ${testA}  ${testA}
 ```
 2. Should Be True    **判斷式**
-3. Should Match  **String**  **pattern**  
+3. Should Match  **String**  **pattern**   
 比對值 pattern:需符合的條件  
 *:任依字母皆符合(不管多少字元)  
 ?:任依字母皆符合(只限一個字元) 
 
-#####出錯後繼續執行  
-  Run Keyword And Cintinue On Failure  **Keyword** 
-######迴圈  
-Example
+#### 3、迴圈    
+**For In Element**   
+指定某些變數   
+語法: **For ${target} in @{target_list}**   
+Example  
+
 ```
     @{elements}    Set Variable    1   2
     :FOR    ${變數}    IN    @{elements}
     \    StartXXX
-```   
-[迴圈參考文件](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#for-loops) 
+```    
+**For In Range**  
+特定某個Range 1到10  
+語法: **For ${index} In range ${range}**  
+Example  
+```
+    ${n}    Set Variable    10
+    :For   1  in range  ${n}
+    \    StarXXX 
+```
+如果初始值沒給就是從0開始   
+[迴圈參考文件](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#for-loops)   
 [迴圈參考文件2](https://tonylin.idv.tw/dokuwiki/doku.php/rf:rf:for_loop)
 
 ---
