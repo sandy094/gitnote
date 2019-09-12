@@ -47,16 +47,18 @@ Execute JavaScript  window.document.documentElement.scrollTop = 0;
 
 #### 2、判斷式   
 1. Should Be Equal As Integers  **變數1**  **變數2**   
-   :判斷變數1及變數2是否為相等
-EX.
+   :判斷變數1及變數2是否為相等(只能是數值)   
+
 ```
     ${A}=    Get Text    //div[@id="data-table"]//tbody/tr[1]/td[3]//span[1]
     ${testA}=    Remove String    ${A}    ,
     Convert To Integer    ${testA}
     Should Be Equal As Integers  ${testA}  ${testA}
 ```
-2. Should Be True    **判斷式**
-3. Should Match  **String**  **pattern**   
+2. Should Be Equal  **數值**  **數值**   
+   :必須是Integer   
+3. Should Be True    **判斷式**
+4. Should Match  **String**  **pattern**   
 比對值 pattern:需符合的條件  
 *:任依字母皆符合(不管多少字元)  
 ?:任依字母皆符合(只限一個字元) 
@@ -81,14 +83,17 @@ Example
     :For   1  in range  ${n}
     \    StarXXX 
 ```
-如果初始值沒給就是從0開始   
+如果初始值沒給就是從0開始  
+由上述例子只會算0-9     
 [迴圈參考文件](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#for-loops)   
 [迴圈參考文件2](https://tonylin.idv.tw/dokuwiki/doku.php/rf:rf:for_loop)
 
 ---
 **其他筆記**   
+[Robot命令行指令](https://www.itread01.com/content/1552567083.html)  
 **參考資料**   
 [Selenium2Library](http://robotframework.org/Selenium2Library/Selenium2Library.html)   
 [RobotFrameWork](http://robotframework.org/robotframework/)   
 [Builtin](http://robotframework.org/robotframework/latest/libraries/BuiltIn.html)  
-[OperatingSystem](http://robotframework.org/robotframework/latest/libraries/OperatingSystem.html)
+[OperatingSystem](http://robotframework.org/robotframework/latest/libraries/OperatingSystem.html)  
+[pass execution用法?](https://github.com/robotframework/robotframework/blob/master/atest/testdata/running/pass_execution.robot#L223)  

@@ -394,6 +394,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.5.2" data-path="../read/read2.html">
+            
+                <a href="../read/read2.html">
+            
+                    
+                    其他相關資料
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -479,12 +492,14 @@
 </ol>
 <h4 id="2&#x3001;&#x5224;&#x65B7;&#x5F0F;">2&#x3001;&#x5224;&#x65B7;&#x5F0F;</h4>
 <ol>
-<li>Should Be Equal As Integers  <strong>&#x8B8A;&#x6578;1</strong>  <strong>&#x8B8A;&#x6578;2</strong><br>:&#x5224;&#x65B7;&#x8B8A;&#x6578;1&#x53CA;&#x8B8A;&#x6578;2&#x662F;&#x5426;&#x70BA;&#x76F8;&#x7B49;
-EX.<pre><code> ${A}=    Get Text    //div[@id=&quot;data-table&quot;]//tbody/tr[1]/td[3]//span[1]
- ${testA}=    Remove String    ${A}    ,
- Convert To Integer    ${testA}
- Should Be Equal As Integers  ${testA}  ${testA}
-</code></pre></li>
+<li>Should Be Equal As Integers  <strong>&#x8B8A;&#x6578;1</strong>  <strong>&#x8B8A;&#x6578;2</strong><br>:&#x5224;&#x65B7;&#x8B8A;&#x6578;1&#x53CA;&#x8B8A;&#x6578;2&#x662F;&#x5426;&#x70BA;&#x76F8;&#x7B49;(&#x53EA;&#x80FD;&#x662F;&#x6578;&#x503C;)   </li>
+</ol>
+<pre><code>    ${A}=    Get Text    //div[@id=&quot;data-table&quot;]//tbody/tr[1]/td[3]//span[1]
+    ${testA}=    Remove String    ${A}    ,
+    Convert To Integer    ${testA}
+    Should Be Equal As Integers  ${testA}  ${testA}
+</code></pre><ol>
+<li>Should Be Equal  <strong>&#x6578;&#x503C;</strong>  <strong>&#x6578;&#x503C;</strong><br>:&#x5FC5;&#x9808;&#x662F;Integer   </li>
 <li>Should Be True    <strong>&#x5224;&#x65B7;&#x5F0F;</strong></li>
 <li>Should Match  <strong>String</strong>  <strong>pattern</strong><br>&#x6BD4;&#x5C0D;&#x503C; pattern:&#x9700;&#x7B26;&#x5408;&#x7684;&#x689D;&#x4EF6;<br>*:&#x4EFB;&#x4F9D;&#x5B57;&#x6BCD;&#x7686;&#x7B26;&#x5408;(&#x4E0D;&#x7BA1;&#x591A;&#x5C11;&#x5B57;&#x5143;)<br>?:&#x4EFB;&#x4F9D;&#x5B57;&#x6BCD;&#x7686;&#x7B26;&#x5408;(&#x53EA;&#x9650;&#x4E00;&#x500B;&#x5B57;&#x5143;) </li>
 </ol>
@@ -497,9 +512,9 @@ EX.<pre><code> ${A}=    Get Text    //div[@id=&quot;data-table&quot;]//tbody/tr[
 <pre><code>    ${n}    Set Variable    10
     :For   1  in range  ${n}
     \    StarXXX
-</code></pre><p>&#x5982;&#x679C;&#x521D;&#x59CB;&#x503C;&#x6C92;&#x7D66;&#x5C31;&#x662F;&#x5F9E;0&#x958B;&#x59CB;<br><a href="http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#for-loops" target="_blank">&#x8FF4;&#x5708;&#x53C3;&#x8003;&#x6587;&#x4EF6;</a><br><a href="https://tonylin.idv.tw/dokuwiki/doku.php/rf:rf:for_loop" target="_blank">&#x8FF4;&#x5708;&#x53C3;&#x8003;&#x6587;&#x4EF6;2</a></p>
+</code></pre><p>&#x5982;&#x679C;&#x521D;&#x59CB;&#x503C;&#x6C92;&#x7D66;&#x5C31;&#x662F;&#x5F9E;0&#x958B;&#x59CB;<br>&#x7531;&#x4E0A;&#x8FF0;&#x4F8B;&#x5B50;&#x53EA;&#x6703;&#x7B97;0-9<br><a href="http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#for-loops" target="_blank">&#x8FF4;&#x5708;&#x53C3;&#x8003;&#x6587;&#x4EF6;</a><br><a href="https://tonylin.idv.tw/dokuwiki/doku.php/rf:rf:for_loop" target="_blank">&#x8FF4;&#x5708;&#x53C3;&#x8003;&#x6587;&#x4EF6;2</a></p>
 <hr>
-<p><strong>&#x5176;&#x4ED6;&#x7B46;&#x8A18;</strong><br><strong>&#x53C3;&#x8003;&#x8CC7;&#x6599;</strong><br><a href="http://robotframework.org/Selenium2Library/Selenium2Library.html" target="_blank">Selenium2Library</a><br><a href="http://robotframework.org/robotframework/" target="_blank">RobotFrameWork</a><br><a href="http://robotframework.org/robotframework/latest/libraries/BuiltIn.html" target="_blank">Builtin</a><br><a href="http://robotframework.org/robotframework/latest/libraries/OperatingSystem.html" target="_blank">OperatingSystem</a></p>
+<p><strong>&#x5176;&#x4ED6;&#x7B46;&#x8A18;</strong><br><a href="https://www.itread01.com/content/1552567083.html" target="_blank">Robot&#x547D;&#x4EE4;&#x884C;&#x6307;&#x4EE4;</a><br><strong>&#x53C3;&#x8003;&#x8CC7;&#x6599;</strong><br><a href="http://robotframework.org/Selenium2Library/Selenium2Library.html" target="_blank">Selenium2Library</a><br><a href="http://robotframework.org/robotframework/" target="_blank">RobotFrameWork</a><br><a href="http://robotframework.org/robotframework/latest/libraries/BuiltIn.html" target="_blank">Builtin</a><br><a href="http://robotframework.org/robotframework/latest/libraries/OperatingSystem.html" target="_blank">OperatingSystem</a><br><a href="https://github.com/robotframework/robotframework/blob/master/atest/testdata/running/pass_execution.robot#L223" target="_blank">pass execution&#x7528;&#x6CD5;?</a>  </p>
 
                                 
                                 </section>
@@ -543,7 +558,7 @@ EX.<pre><code> ${A}=    Get Text    //div[@id=&quot;data-table&quot;]//tbody/tr[
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Rebot Framework + Selenium","level":"1.3.7","depth":2,"next":{"title":"自動化測試邏輯","level":"1.4","depth":1,"path":"doc/README.md","ref":"doc/README.md","articles":[{"title":"綜合看板","level":"1.4.1","depth":2,"path":"doc/doc1.md","ref":"doc/doc1.md","articles":[]},{"title":"營運看板","level":"1.4.2","depth":2,"path":"doc/doc2.md","ref":"doc/doc2.md","articles":[]}]},"previous":{"title":"Angular","level":"1.3.6","depth":2,"path":"code/code_ch6.md","ref":"code/code_ch6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"code/code_ch7.md","mtime":"2019-04-24T09:28:48.572Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-17T05:36:02.954Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Rebot Framework + Selenium","level":"1.3.7","depth":2,"next":{"title":"自動化測試邏輯","level":"1.4","depth":1,"path":"doc/README.md","ref":"doc/README.md","articles":[{"title":"綜合看板","level":"1.4.1","depth":2,"path":"doc/doc1.md","ref":"doc/doc1.md","articles":[]},{"title":"營運看板","level":"1.4.2","depth":2,"path":"doc/doc2.md","ref":"doc/doc2.md","articles":[]}]},"previous":{"title":"Angular","level":"1.3.6","depth":2,"path":"code/code_ch6.md","ref":"code/code_ch6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"code/code_ch7.md","mtime":"2019-09-11T03:55:54.724Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-12T01:27:59.543Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
