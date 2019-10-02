@@ -23,4 +23,5 @@
 * [額外學習](read/README.md)
     * [Wireframe/Prototype](read/read1.md)
     * [其他相關資料](read/read2.md)
+    * [App相關設定](read/read3.md)
 
