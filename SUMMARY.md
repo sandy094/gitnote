@@ -9,6 +9,7 @@
     * [Jenkins](tools/tool_ch5.md)
     * [Jenkins+Githib](tools/tool_ch5-1.md)
     * [Axure](tools/tool_ch6.md)
+    * [Appium](tools/tool_ch7.md)
 * [語言](code/README.md)
     * [excel函數](code/code_ch1.md)
     * [JavaScript](code/code_ch2.md)
