@@ -6,6 +6,8 @@ App測試自動化工具
 ```xcodebuild -showsdks```
 此指令會列出所有安裝的SDK裝置，從這邊記住模擬器SDK   
    
+xcode 套件更新  
+```pod install```   
 
 ---
 參考資料  
