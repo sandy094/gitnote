@@ -13,14 +13,35 @@ App測試須考量的因素
 ![](\images\App說明-1.png) 
 系統版本、裝置不同，各裝置解析度、網路及使用者操錯方式不同  
 
+---  
+```
+def setup_module(module):
+    
+
+def teardown_module(module):
+
+``` 
+**執行所有test之前，先run過一次**
+classmethod  
+```
+class test123(Object):
+
+    @classmethod
+    def setup_class(cls)
+    
+
+```
+**在這個class內，所有執行test之前要跑此classmethod**
+
+xcode 套件更新  
+```pod install```   
+
 
 
 打包測試App  
 ```xcodebuild -showsdks```
 此指令會列出所有安裝的SDK裝置，從這邊記住模擬器SDK   
    
-xcode 套件更新  
-```pod install```   
 
 ---
 參考資料  
