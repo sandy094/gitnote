@@ -2,23 +2,13 @@
 * UIView:是一個底層的原件，絕大部分的UI元件都是吃這個底層的元件
 * UIKit:大部分的原件來源
 * 練習使用工具:xcode:playground
-### tableView
-
-在框架裡塞一個view使用init   
-uiview.init(frame:)
-<!-- 詳細code在引用的時候 -->
-<!-- 新的框架的概念 -->
-在view塞一個框架
-addsubview
-
-let label= UILabel.init(frame:CGRect.init())
 
 
 ### viewcontroller 生命週期  
 - viewcontroller有一個生命週期，週期跑完才會執行其他程序
 一個生命週期有好幾個方法，主要常使用的是下列3個
 1. loadView
-2. viewDidLoad
+2. viewDidLoad:只出現一次
 3. viewWillAppear:當個view再次出現，需再次重Load就會執行
 
 func
@@ -99,27 +89,60 @@ func closeThisPage(){
 }
 
 ```
-### tableview
+
+### tableView
+
+在框架裡塞一個view使用init   
+uiview.init(frame:)
+<!-- 詳細code在引用的時候 -->
+<!-- 新的框架的概念 -->
+在view塞一個框架
+addsubview
+
+let label= UILabel.init(frame:CGRect.init())
+
 - 有這兩個方式
   - view.bounds-->先用這個
   - view.frame
 
-- tableView.delegate
-- tableView.datsource  
+### 協定
+- tableView.delegate:處理外觀
+- tableView.datsource:要多少section/Row.標題要顯示什麼  
+在設定的時候，必須告訴UITableView要顯示什麼，在ViewController的viewDidLoad方法中加  
+**tableview_name.delegate = self**  
+**tableview_naem.dataSource = self**   
+
 **冒號是繼承逗號是擴充**
 
 protocol
 
-section都從tableview
 
 exten:繼承
 共用cell
+
+---
+
+### 工具  
+#### CocoaPods
+- 用來管理第三方套件   
+相關指令  
+```
+<!-- 查看版本 --> 
+pod --version
+<!-- 更新版本 -->
+<!-- 更新至Podfile指定的版本 -->
+pod install
+<!-- 更新至最新版本 -->
+pod update
+
+```
 
 
 ---
 
 **參考資料**   
-
+[tableView](https://ithelp.ithome.com.tw/articles/10193458)  
+[工具-CocoaPods](https://medium.com/@mikru168/ios-%E9%80%8F%E9%81%8E-cocaopod-%E4%BE%86%E7%AE%A1%E7%90%86%E7%AC%AC%E4%B8%89%E6%96%B9%E7%9A%84%E5%A5%97%E4%BB%B6-ba783ced09f6)
 
 ---
 **問題**  
