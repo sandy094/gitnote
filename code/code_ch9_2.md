@@ -121,6 +121,25 @@ exten:繼承
 共用cell
 
 ---
+*** CollectView***  
+
+- 設定cell大小
+1. 從XIb(Interface Builder)設定大小
+2. 從程式設定大小:  
+```
+override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        ///
+        let flowLayout = collectionViewLayout as? UICollectionViewFlowLayout
+        flowLayout?.itemSize = CGSize(width: 100, height: 100)
+        flowLayout?.estimatedItemSize = .zero
+        flowLayout?.minimumInteritemSpacing = 1
+}
+```
+
+
+---
 
 ### 工具  
 #### CocoaPods
