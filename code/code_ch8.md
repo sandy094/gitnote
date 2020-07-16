@@ -24,7 +24,16 @@ names:["A,B,C,D"]
 names.pop()
 
 
-```
+```  
+--- 
+### Pytest  
+是python測試工具，支援平行化測試  
+
+需遵循的規則  
+1. 檔名必須含有test是 ```test_*.py``` 或 ```*_test.py```   
+2. 類別名稱必須是 ```test```開頭  
+3. 函數與類別內方法必須要以 ```test``` 最為前綴  
+
 
 **參考資料**   
 [Python](https://ithelp.ithome.com.tw/users/20069378/ironman/1113)   

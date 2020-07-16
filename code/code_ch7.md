@@ -1,6 +1,10 @@
-##Robot FrameWork + Selenuim    
+##Robot FrameWork + Selenuim2    
 
-Robot FrameWork: python編寫的自動化測試軟體框架   
+python編寫的自動化測試軟體框架，此Framework用於自動化測試。  
+#### 好處  
+1. 已經有規範好的keyword，容易使用  
+2. 程式經驗少的人也可以好上手  
+  
 ######工具(環境建置)     
 **1. 安裝Python**:確認python版本```python --version```    
 當安裝失敗:設定環境變數:將安裝python的資料夾下script檔案位置記下，"加入"PATH的環境變數  
@@ -97,3 +101,5 @@ Example
 [Builtin](http://robotframework.org/robotframework/latest/libraries/BuiltIn.html)  
 [OperatingSystem](http://robotframework.org/robotframework/latest/libraries/OperatingSystem.html)  
 [pass execution用法?](https://github.com/robotframework/robotframework/blob/master/atest/testdata/running/pass_execution.robot#L223)  
+**額外學習**  
+[為何要用RobotFramework](http://blog.castman.net/programming/2016/07/28/robotframework.html)
