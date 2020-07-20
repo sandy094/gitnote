@@ -4,17 +4,22 @@ python編寫的自動化測試軟體框架，此Framework用於自動化測試�
 #### 好處  
 1. 已經有規範好的keyword，容易使用  
 2. 程式經驗少的人也可以好上手  
+### Selenuim  
+- 是為了讓瀏覽器自動化(Browser Automation)需求所設計的一套工具，驅動瀏覽器  
+- 是許多Web Testing工具核心
   
-######工具(環境建置)     
-**1. 安裝Python**:確認python版本```python --version```    
+###### 工具(環境建置)     
+1. 安裝Python**:確認python版本```python --version```    
 當安裝失敗:設定環境變數:將安裝python的資料夾下script檔案位置記下，"加入"PATH的環境變數  
-**2. robotframework**:下指令 ```pip install robotframework```   
-**3. selenium2**:下指令 ```pip install robotframework-selenium2library```  
+2. robotframework**:下指令 ```pip install robotframework```     
+3. selenium2**:下指令```pip install robotframework-selenium2library```    
+---
 
+###### 命名規則  
 Keyword:透過framework所以提供現有個關鍵字去撰寫測試   
-主要網頁(?)->寫TestCase   
-
-######一、執行命令   
+有描述，簡單
+---
+###### 一、執行命令   
 1. 執行整個test檔案 :   
 ```
 robot web/test_dashboard_page.robot
@@ -25,7 +30,7 @@ robot web/test_dashboard_page.robot
 robot -t "Check login" web/test_dashboard_page.robot
 ```
 
-######二、視窗高度大小  
+###### 二、視窗高度大小  
 利用JavaScript的語法去調整高度   
 * 調整視窗高度  
 window.scrollTo (**Height**, document.body.scrollHeight)  
@@ -38,7 +43,7 @@ window.document.documentElement.scrollTop = **Height**;
 Execute JavaScript  window.document.documentElement.scrollTop = 0;   
 ```
 
-######三、出錯後繼續執行  
+###### 三、出錯後繼續執行  
   Run Keyword And Continue On Failure  **Keyword**   
 
 ###**常用的keyword**   
@@ -103,3 +108,4 @@ Example
 [pass execution用法?](https://github.com/robotframework/robotframework/blob/master/atest/testdata/running/pass_execution.robot#L223)  
 **額外學習**  
 [為何要用RobotFramework](http://blog.castman.net/programming/2016/07/28/robotframework.html)
+[How to write good test cases using Robot Framework](https://github.com/robotframework/HowToWriteGoodTestCases/blob/master/HowToWriteGoodTestCases.rst#test-suite-names)

@@ -9,10 +9,10 @@ python編寫的自動化測試軟體框架，此Framework用於自動化測試�
 - 是許多Web Testing工具核心
   
 ###### 工具(環境建置)     
-**1. 安裝Python**:確認python版本```python --version```    
+1. 安裝Python**:確認python版本```python --version```    
 當安裝失敗:設定環境變數:將安裝python的資料夾下script檔案位置記下，"加入"PATH的環境變數  
-**2. robotframework**:下指令 ```pip install robotframework```   
-**3. selenium2**:下指令 ```pip install robotframework-selenium2library```    
+2. robotframework**:下指令 ```pip install robotframework```     
+3. selenium2**:下指令```pip install robotframework-selenium2library```    
 ---
 
 ###### 命名規則  
